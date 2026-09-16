@@ -1,0 +1,750 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Quản trị viên T3Gold",
+      "phone": "0988768345",
+      "email": "admin@t3gold.vn",
+      "password": "$2a$10$6Yo/pMnzgv.mTl5YkMDu/OL6/zyEgJCuN9kN6biUusJ0vybCZnlhO",
+      "storeName": "Trụ sở chính T3Gold",
+      "address": "TP. Hồ Chí Minh",
+      "role": "admin",
+      "isApproved": true,
+      "referralCode": "T3ADMIN",
+      "createdAt": "2026-09-03T09:57:25.160Z"
+    },
+    {
+      "id": "usr_shareholder1",
+      "name": "Trần Văn Cổ Đông 1",
+      "phone": "0901111111",
+      "email": "codong1@t3gold.vn",
+      "password": "$2a$10$6Yo/pMnzgv.mTl5YkMDu/OHj/Ja.c0hVP7bkQnQeJjlvmf72Oilii",
+      "storeName": "Hội Đồng Cổ Đông 1",
+      "address": "TP. HCM",
+      "role": "shareholder",
+      "nodeId": "org_shareholder1",
+      "isApproved": true,
+      "status": "sold",
+      "createdAt": "2026-09-03T09:57:25.218Z"
+    },
+    {
+      "id": "usr_shareholder2",
+      "name": "Lê Thị Cổ Đông 2",
+      "phone": "0902222222",
+      "email": "codong2@t3gold.vn",
+      "password": "$2a$10$6Yo/pMnzgv.mTl5YkMDu/OHj/Ja.c0hVP7bkQnQeJjlvmf72Oilii",
+      "storeName": "Hội Đồng Cổ Đông 2",
+      "address": "Bình Dương",
+      "role": "shareholder",
+      "nodeId": "org_shareholder2",
+      "isApproved": true,
+      "status": "sold",
+      "createdAt": "2026-09-03T09:57:25.273Z"
+    },
+    {
+      "id": "usr_manager1",
+      "name": "Nguyễn Văn Quản Lý Nhân Sự",
+      "phone": "0903333333",
+      "email": "quanly1@t3gold.vn",
+      "password": "$2a$10$6Yo/pMnzgv.mTl5YkMDu/OUs7KfHZoo1Ak.ck99h2Gh37TgjdRVK6",
+      "storeName": "Bộ Máy Nhân Sự",
+      "address": "Bình Dương",
+      "role": "manager",
+      "nodeId": "org_staff_dept",
+      "isApproved": true,
+      "status": "sold",
+      "createdAt": "2026-09-03T09:57:25.329Z",
+      "isRevenueApproved": true,
+      "updatedAt": "2026-09-13T01:59:29.516Z"
+    },
+    {
+      "id": "use_1789457206311_h1wfn",
+      "createdAt": "2026-09-15T07:26:46.310Z",
+      "name": "Mai Nguyễn Trường Duy",
+      "phone": "0335238260",
+      "email": "",
+      "password": "$2a$10$zq5/6hiVw.ZiYznm0/cII.RLgDqJeSELQ.P5Zek3n8K2HzLK1nkm.",
+      "rawPassword": "123456",
+      "storeName": "Tiệm Vàng",
+      "address": "Phường phú thọ",
+      "role": "member",
+      "isApproved": false,
+      "status": "pending",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "amountPaid": 0,
+      "licenseKey": "T3G-GÓI QUẢN LÝ CƠ BẢN-H2XB-FFEV",
+      "expirationDate": "2026-10-15T07:26:46.310Z",
+      "referralCode": "TIEMVANG281",
+      "referrerCode": ""
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_001",
+      "memberId": "usr_member2",
+      "customerName": "Lê Văn Tám",
+      "productName": "Nhẫn vàng 24k - 1 chỉ",
+      "amount": 7600000,
+      "quantity": 1,
+      "status": "completed",
+      "purchaseDate": "2026-07-15T10:00:00.000Z",
+      "createdAt": "2026-07-15T10:00:00.000Z"
+    },
+    {
+      "id": "ord_002",
+      "memberId": "usr_member2",
+      "customerName": "Nguyễn Thị Hoa",
+      "productName": "Lắc tay bạc ý 925",
+      "amount": 1200000,
+      "quantity": 2,
+      "status": "completed",
+      "purchaseDate": "2026-07-16T14:30:00.000Z",
+      "createdAt": "2026-07-16T14:30:00.000Z"
+    },
+    {
+      "id": "ord_003",
+      "memberId": "usr_member2",
+      "customerName": "Phạm Minh Trí",
+      "productName": "Dây chuyền vàng 18k - 3 chỉ",
+      "amount": 18500000,
+      "quantity": 1,
+      "status": "pending",
+      "purchaseDate": "2026-07-18T09:15:00.000Z",
+      "createdAt": "2026-07-18T09:15:00.000Z"
+    },
+    {
+      "id": "ord_lic_001",
+      "memberId": "usr_admin",
+      "customerName": "Tiệm Vàng Kim Long (Minh)",
+      "productName": "T3Gold Pro - Gói 1 Năm",
+      "amount": 3500000,
+      "quantity": 1,
+      "status": "completed",
+      "purchaseDate": "2026-07-10T08:00:00.000Z",
+      "createdAt": "2026-07-10T08:00:00.000Z"
+    },
+    {
+      "id": "ord_lic_002",
+      "memberId": "usr_admin",
+      "customerName": "Tiệm Vàng Kim Thịnh (Thủy)",
+      "productName": "T3Gold Lifetime - Gói Vĩnh Viễn",
+      "amount": 9500000,
+      "quantity": 1,
+      "status": "completed",
+      "purchaseDate": "2026-07-12T11:00:00.000Z",
+      "createdAt": "2026-07-12T11:00:00.000Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_001",
+      "memberId": "usr_member2",
+      "name": "Lê Văn Tám",
+      "phone": "0909112233",
+      "email": "tam.le@gmail.com",
+      "address": "Quận 10, TP. Hồ Chí Minh",
+      "notes": "Khách hàng thân thiết, thường mua vàng nhẫn tích lũy",
+      "createdAt": "2026-07-15T10:00:00.000Z"
+    },
+    {
+      "id": "cust_002",
+      "memberId": "usr_member2",
+      "name": "Nguyễn Thị Hoa",
+      "phone": "0988776655",
+      "email": "hoa.nguyen@yahoo.com",
+      "address": "Bình Thạnh, TP. Hồ Chí Minh",
+      "notes": "Ưa thích các dòng trang sức bạc phong cách trẻ trung",
+      "createdAt": "2026-07-16T14:30:00.000Z"
+    },
+    {
+      "id": "cust_003",
+      "memberId": "usr_member2",
+      "name": "Phạm Minh Trí",
+      "phone": "0911223399",
+      "email": "tri.pham@outlook.com",
+      "address": "Thủ Dầu Một, Bình Dương",
+      "notes": "Đặt chế tác riêng dây chuyền vàng 18k làm quà cưới",
+      "createdAt": "2026-07-18T09:15:00.000Z"
+    }
+  ],
+  "referrals": [
+    {
+      "id": "ref_001",
+      "referrerId": "usr_member2",
+      "refereeName": "Tiệm Vàng Hùng Phát",
+      "status": "completed",
+      "commission": 500000,
+      "createdAt": "2026-07-14T10:00:00.000Z"
+    },
+    {
+      "id": "ref_002",
+      "referrerId": "usr_member2",
+      "refereeName": "Dịch vụ Cầm đồ Kim Tiền",
+      "status": "pending",
+      "commission": 0,
+      "createdAt": "2026-07-18T16:00:00.000Z"
+    }
+  ],
+  "orgNodes": [
+    {
+      "id": "org_chairman",
+      "label": "Chủ tịch",
+      "parentId": null,
+      "roleType": "president",
+      "commission": 70,
+      "expenses": [],
+      "taxes": 10,
+      "customFields": [],
+      "parentIds": []
+    },
+    {
+      "id": "org_shareholder1",
+      "label": "Cổ đông 1",
+      "parentId": "org_chairman",
+      "roleType": "shareholder",
+      "commission": 5,
+      "expenses": [],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_chairman"
+      ]
+    },
+    {
+      "id": "org_shareholder2",
+      "label": "Cổ đông 2",
+      "parentId": "org_chairman",
+      "roleType": "shareholder",
+      "commission": 10,
+      "expenses": [],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_chairman"
+      ]
+    },
+    {
+      "id": "org_shareholder3",
+      "label": "Cổ đông 3",
+      "parentId": "org_chairman",
+      "roleType": "shareholder",
+      "commission": 15,
+      "expenses": [],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_chairman"
+      ]
+    },
+    {
+      "id": "org_staff_dept",
+      "label": "Bộ máy nhân sự",
+      "parentId": "org_shareholder1",
+      "roleType": "department",
+      "commission": 0,
+      "expenses": [],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_shareholder1",
+        "org_shareholder2"
+      ]
+    },
+    {
+      "id": "org_staff1",
+      "label": "NV Code 1",
+      "parentId": "org_staff_dept",
+      "roleType": "staff",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Lương",
+          "amount": 6000000
+        },
+        {
+          "name": "Bảo hiểm",
+          "amount": 2000000
+        },
+        {
+          "name": "Phụ cấp",
+          "amount": 3000000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_staff_dept"
+      ]
+    },
+    {
+      "id": "org_staff2",
+      "label": "NV Code 2",
+      "parentId": "org_staff_dept",
+      "roleType": "staff",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Lương",
+          "amount": 5000000
+        },
+        {
+          "name": "Bảo hiểm",
+          "amount": 1500000
+        },
+        {
+          "name": "Phụ cấp",
+          "amount": 1000000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_staff_dept"
+      ]
+    },
+    {
+      "id": "org_staff3",
+      "label": "NV Code 3",
+      "parentId": "org_staff_dept",
+      "roleType": "staff",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Lương",
+          "amount": 4000000
+        },
+        {
+          "name": "Bảo hiểm",
+          "amount": 1000000
+        },
+        {
+          "name": "Phụ cấp",
+          "amount": 500000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_staff_dept"
+      ]
+    },
+    {
+      "id": "org_tools_dept",
+      "label": "Công cụ phần mềm / AI",
+      "parentId": "org_shareholder2",
+      "roleType": "department",
+      "commission": 0,
+      "expenses": [],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_shareholder2",
+        "org_shareholder3"
+      ]
+    },
+    {
+      "id": "org_tool1",
+      "label": "AI Chat GPT",
+      "parentId": "org_tools_dept",
+      "roleType": "tool",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Phí bản quyền",
+          "amount": 2000000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_tools_dept"
+      ]
+    },
+    {
+      "id": "org_tool2",
+      "label": "Capcut",
+      "parentId": "org_tools_dept",
+      "roleType": "tool",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Phí bản quyền",
+          "amount": 1000000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_tools_dept"
+      ]
+    },
+    {
+      "id": "org_tool3",
+      "label": "Canva",
+      "parentId": "org_tools_dept",
+      "roleType": "tool",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Phí bản quyền",
+          "amount": 500000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_tools_dept"
+      ]
+    },
+    {
+      "id": "org_ops_dept",
+      "label": "Chi phí vận hành",
+      "parentId": "org_shareholder1",
+      "roleType": "department",
+      "commission": 0,
+      "expenses": [],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_shareholder1",
+        "org_shareholder3"
+      ],
+      "userId": null
+    },
+    {
+      "id": "org_op1",
+      "label": "mặt Bằng",
+      "parentId": "org_ops_dept",
+      "roleType": "expense",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Tiền thuê nhà",
+          "amount": 10000000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_ops_dept"
+      ]
+    },
+    {
+      "id": "org_op2",
+      "label": "chi phí thiết bị",
+      "parentId": "org_ops_dept",
+      "roleType": "expense",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Khấu hao thiết bị",
+          "amount": 2000000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_ops_dept"
+      ]
+    },
+    {
+      "id": "org_op3",
+      "label": "CP Khác",
+      "parentId": "org_ops_dept",
+      "roleType": "expense",
+      "commission": 0,
+      "expenses": [
+        {
+          "name": "Chi phí phát sinh",
+          "amount": 1000000
+        }
+      ],
+      "taxes": 0,
+      "customFields": [],
+      "parentIds": [
+        "org_ops_dept"
+      ]
+    }
+  ],
+  "customCalculations": [
+    {
+      "id": "cc_reserve",
+      "name": "Quỹ dự phòng phát triển",
+      "type": "subtract",
+      "value": 500000
+    }
+  ],
+  "smsLogs": [
+    {
+      "id": "sms_1789265843716_jf6t3",
+      "createdAt": "2026-09-13T02:17:23.716Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "content": "Gói phần mềm bạn đăng ký (Phần Mềm Quản Lý Mua Bán Vàng) đã được duyệt thành công với tên đăng nhập: 0335238260, Mật khẩu: Mật khẩu bạn đã đăng ký",
+      "status": "sent",
+      "sentAt": "2026-09-13T02:17:23.685Z"
+    },
+    {
+      "id": "sms_1789265937312_w9a6d",
+      "createdAt": "2026-09-13T02:18:57.312Z",
+      "phone": "0335238268",
+      "storeName": "Tiệm Vàng Kim Thịnh",
+      "content": "Gói phần mềm bạn đăng ký (Gói Quản Lý Cơ Bản) đã được duyệt thành công với tên đăng nhập: 0335238268, Mật khẩu: 123456",
+      "status": "sent",
+      "sentAt": "2026-09-13T02:18:57.262Z"
+    },
+    {
+      "id": "sms_1789267551172_ge5nu",
+      "createdAt": "2026-09-13T02:45:51.173Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "content": "Gói phần mềm bạn đăng ký (Gói Quản Lý Cơ Bản) đã được duyệt thành công với tên đăng nhập: 0335238260, Mật khẩu: 123456",
+      "status": "sent",
+      "sentAt": "2026-09-13T02:45:51.146Z"
+    },
+    {
+      "id": "sms_1789267944139_47vv8",
+      "createdAt": "2026-09-13T02:52:24.140Z",
+      "phone": "0987654321",
+      "storeName": "Tiệm Vàng Kim Thịnh",
+      "content": "Gói phần mềm bạn đăng ký (T3Gold Lifetime) đã được duyệt thành công với tên đăng nhập: 0987654321, Mật khẩu: Mật khẩu bạn đã đăng ký",
+      "status": "sent",
+      "sentAt": "2026-09-13T02:52:24.138Z"
+    },
+    {
+      "id": "sms_1789269820162_avvh1",
+      "createdAt": "2026-09-13T03:23:40.162Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "content": "Gói phần mềm bạn đăng ký (Gói Quản Lý Cơ Bản) đã được duyệt thành công với tên đăng nhập: 0335238260, Mật khẩu: 123456",
+      "status": "sent",
+      "sentAt": "2026-09-13T03:23:40.147Z"
+    },
+    {
+      "id": "sms_1789269857012_xjhsp",
+      "createdAt": "2026-09-13T03:24:17.012Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "content": "Gói phần mềm bạn đăng ký (Gói Quản Lý Cơ Bản) đã được duyệt thành công với tên đăng nhập: 0335238260, Mật khẩu: 123456",
+      "status": "sent",
+      "sentAt": "2026-09-13T03:24:16.989Z"
+    },
+    {
+      "id": "sms_1789270377042_o0jag",
+      "createdAt": "2026-09-13T03:32:57.042Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "type": "forgot_password",
+      "content": "🔑 KHÔI PHỤC MẬT KHẨU TÀI KHOẢN T3GOLD\n\nHệ thống T3Gold vừa cấp mật khẩu đăng nhập mới theo yêu cầu của anh/chị (Tiệm Vàng).\n\n🔐 Thông tin đăng nhập mới:\nTên đăng nhập: 0335238260\nMật khẩu mới: 934300\n\n✨ Vui lòng sử dụng mật khẩu này để đăng nhập lại hệ thống.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-13T03:32:57.027Z"
+    },
+    {
+      "id": "sms_1789270801342_7t1yx",
+      "createdAt": "2026-09-13T03:40:01.342Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "type": "reset_otp",
+      "otpCode": "469673",
+      "content": "[T3Gold] Mã OTP khôi phục mật khẩu của anh/chị (Tiệm Vàng) là: 469673. Mã có hiệu lực trong 5 phút. Vui lòng không chia sẻ mã này cho người khác.",
+      "status": "sent",
+      "sentAt": "2026-09-13T03:40:01.329Z"
+    },
+    {
+      "id": "sms_1789273339750_27eqm",
+      "createdAt": "2026-09-13T04:22:19.750Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nGói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn) của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 456789\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-13T04:22:19.733Z"
+    },
+    {
+      "id": "sms_1789289270664_sa2rm",
+      "createdAt": "2026-09-13T08:47:50.665Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nGói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn) của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-13T08:47:50.590Z"
+    },
+    {
+      "id": "sms_1789289342969_6jffz",
+      "createdAt": "2026-09-13T08:49:02.970Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "type": "reset_otp",
+      "otpCode": "690093",
+      "content": "[T3Gold] Mã OTP khôi phục mật khẩu của anh/chị (Tiệm Vàng) là: 690093. Mã có hiệu lực trong 5 phút. Vui lòng không chia sẻ mã này cho người khác.",
+      "status": "sent",
+      "sentAt": "2026-09-13T08:49:02.942Z"
+    }
+  ],
+  "zaloLogs": [
+    {
+      "id": "zal_1789297111938_gl0m3",
+      "createdAt": "2026-09-13T10:58:31.938Z",
+      "type": "customer_registration_zns",
+      "phone": "84335238260",
+      "name": "Nguyễn Văn Test",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T10:58:31.925Z"
+    },
+    {
+      "id": "zal_1789297111955_r9jhf",
+      "createdAt": "2026-09-13T10:58:31.955Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "Nguyễn Văn Test",
+      "customerPhone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T10:58:31.942Z"
+    },
+    {
+      "id": "zal_1789297257121_w65sb",
+      "createdAt": "2026-09-13T11:00:57.121Z",
+      "type": "customer_registration_zns",
+      "phone": "84335238260",
+      "name": "test demo",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:00:57.111Z"
+    },
+    {
+      "id": "zal_1789297257138_gv7w4",
+      "createdAt": "2026-09-13T11:00:57.138Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "test demo",
+      "customerPhone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:00:57.124Z"
+    },
+    {
+      "id": "zal_1789297513132_xtr6j",
+      "createdAt": "2026-09-13T11:05:13.132Z",
+      "type": "customer_registration_zns",
+      "phone": "84942758213",
+      "name": "tâm",
+      "storeName": "Tiệm Vàng Kim Thịnh",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:05:13.113Z"
+    },
+    {
+      "id": "zal_1789297513153_xk15j",
+      "createdAt": "2026-09-13T11:05:13.153Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "tâm",
+      "customerPhone": "0942758213",
+      "storeName": "Tiệm Vàng Kim Thịnh",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:05:13.135Z"
+    },
+    {
+      "id": "zal_1789297894220_g6gpe",
+      "createdAt": "2026-09-13T11:11:34.220Z",
+      "type": "customer_registration_zns",
+      "phone": "84392764934",
+      "name": "Tâm",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:11:34.201Z"
+    },
+    {
+      "id": "zal_1789297894236_zaka9",
+      "createdAt": "2026-09-13T11:11:34.236Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "Tâm",
+      "customerPhone": "0392764934",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:11:34.222Z"
+    },
+    {
+      "id": "zal_1789298136468_ztvw8",
+      "createdAt": "2026-09-13T11:15:36.468Z",
+      "type": "customer_registration_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:15:36.448Z"
+    },
+    {
+      "id": "zal_1789298136484_ydbcl",
+      "createdAt": "2026-09-13T11:15:36.484Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "Mai Nguyễn Trường Duy",
+      "customerPhone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "status": "sent",
+      "sentAt": "2026-09-13T11:15:36.470Z"
+    },
+    {
+      "id": "zal_1789456435749_w8gnf",
+      "createdAt": "2026-09-15T07:13:55.749Z",
+      "type": "customer_registration_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "appId": "2170612476781447002",
+      "oaId": "2226317272607901891",
+      "status": "recorded",
+      "sentAt": "2026-09-15T07:13:55.735Z"
+    },
+    {
+      "id": "zal_1789456435764_qftcn",
+      "createdAt": "2026-09-15T07:13:55.764Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "Mai Nguyễn Trường Duy",
+      "customerPhone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "recorded",
+      "sentAt": "2026-09-15T07:13:55.751Z"
+    },
+    {
+      "id": "zal_1789457206332_5ozbo",
+      "createdAt": "2026-09-15T07:26:46.332Z",
+      "type": "customer_registration_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "appId": "2170612476781447002",
+      "oaId": "2226317272607901891",
+      "status": "recorded",
+      "sentAt": "2026-09-15T07:26:46.315Z"
+    },
+    {
+      "id": "zal_1789457206350_wef9c",
+      "createdAt": "2026-09-15T07:26:46.350Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "Mai Nguyễn Trường Duy",
+      "customerPhone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "status": "recorded",
+      "sentAt": "2026-09-15T07:26:46.335Z"
+    }
+  ]
+}
