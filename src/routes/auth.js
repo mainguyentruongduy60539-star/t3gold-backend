@@ -45,7 +45,7 @@ router.post('/register', async (req, res) => {
   const referralCode = `${cleanStoreName.substring(0, 8)}${Math.floor(100 + Math.random() * 900)}`;
 
   // Default package amount
-  const selectedPackage = softwarePackage || 'T3Gold Trial - Dùng thử';
+  const selectedPackage = softwarePackage || 'T3Gold Trial - Dùng thử miễn phí';
   let amountPaid = 0;
   if (selectedPackage.includes('1 Năm')) amountPaid = 3500000;
   else if (selectedPackage.includes('3 Năm')) amountPaid = 8500000;
@@ -67,18 +67,19 @@ router.post('/register', async (req, res) => {
     expirationDate.setDate(expirationDate.getDate() + 30); // 30 days trial
   }
 
-  // Create new user
+  // Khôi phục quyền kích hoạt / phê duyệt của Admin:
+  // Thành viên đăng ký mới sẽ ở trạng thái Chờ duyệt (isApproved: false, status: 'pending')
   const newUser = {
     name,
     phone,
-    email,
+    email: email || '',
     password: hashedPassword,
     rawPassword: password,
     storeName,
     address: address || '',
     role: 'member',
-    isApproved: false,
-    status: 'pending', // Trạng thái bản quyền: Chờ duyệt, Đã bán, Dùng thử, Hủy
+    isApproved: false, // Chờ Admin phê duyệt kích hoạt
+    status: 'pending', // Trạng thái chờ Admin kích hoạt bản quyền
     softwarePackage: selectedPackage,
     amountPaid,
     licenseKey,
@@ -143,6 +144,51 @@ router.post('/register', async (req, res) => {
     token,
     user: userProfile
   });
+});
+
+// Register package for existing logged in user
+router.post('/register-package', verifyToken, async (req, res) => {
+  const { softwarePackage, storeName, phone } = req.body;
+  const user = db.findById('users', req.user.id);
+  if (!user) {
+    return res.status(404).json({ message: 'Không tìm thấy tài khoản.' });
+  }
+
+  const selectedPackage = softwarePackage || user.softwarePackage || 'Gói phần mềm T3Gold';
+  const updatedUser = db.update('users', user.id, {
+    softwarePackage: selectedPackage,
+    status: 'pending',
+    isApproved: false
+  });
+
+  // Trigger Zalo ZNS notifications
+  try {
+    await sendZaloCustomerRegistrationZNS({
+      phone: updatedUser.phone,
+      name: updatedUser.name,
+      storeName: updatedUser.storeName || storeName,
+      softwarePackage: selectedPackage
+    });
+  } catch (err) {
+    console.error('Error sending Zalo ZNS customer reg:', err);
+  }
+
+  try {
+    const adminUser = db.getCollection('users').find(u => u.role === 'admin' || u.role === 'staff_admin');
+    const adminPhone = adminUser ? adminUser.phone : '0988768345';
+    await sendZaloAdminNotification({
+      adminPhone,
+      customerName: updatedUser.name,
+      customerPhone: updatedUser.phone,
+      storeName: updatedUser.storeName || storeName,
+      softwarePackage: selectedPackage
+    });
+  } catch (err) {
+    console.error('Error sending Zalo ZNS admin alert:', err);
+  }
+
+  const { password: _, ...userProfile } = updatedUser;
+  res.json({ message: 'Đăng ký gói thành công!', user: userProfile });
 });
 
 // Login endpoint

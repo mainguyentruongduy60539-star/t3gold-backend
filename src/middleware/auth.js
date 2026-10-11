@@ -27,13 +27,13 @@ function verifyToken(req, res, next) {
     req.user = userWithoutPassword;
     next();
   } catch (error) {
-    return res.status(403).json({ message: 'Mã xác thực không hợp lệ hoặc đã hết hạn.' });
+    return res.status(401).json({ message: 'Mã xác thực không hợp lệ hoặc đã hết hạn.' });
   }
 }
 
 function requireAdmin(req, res, next) {
   if (!req.user || req.user.role !== 'admin') {
-    return res.status(430).json({ message: 'Quyền truy cập bị từ chối. Chỉ dành cho Admin.' });
+    return res.status(403).json({ message: 'Quyền truy cập bị từ chối. Chỉ dành cho Admin.' });
   }
   next();
 }
@@ -50,7 +50,9 @@ function requireApproved(req, res, next) {
     return res.status(401).json({ message: 'Vui lòng đăng nhập.' });
   }
   
-  if (req.user.role !== 'admin' && req.user.role !== 'staff_admin' && !req.user.isApproved) {
+  const isApproved = Boolean(req.user.isApproved || req.user.status === 'sold' || req.user.status === 'trial' || req.user.role === 'admin' || req.user.role === 'staff_admin' || req.user.role === 'shareholder');
+
+  if (!isApproved) {
     return res.status(403).json({ 
       message: 'Tài khoản chưa được phê duyệt để xem thông tin chuyên sâu.',
       isApproved: false

@@ -1,4 +1,4 @@
-require('dotenv').config();
+  require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const db = require('./config/db');
@@ -11,9 +11,29 @@ if (!process.env.JWT_SECRET) {
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Enable CORS with support for frontend address
+// Enable CORS with support for frontend addresses
+const allowedOrigins = [
+  'https://www.t3gold.vn',
+  'https://t3gold.vn',
+  'http://localhost:3000'
+];
+
+if (process.env.CORS_ORIGIN) {
+  process.env.CORS_ORIGIN.split(',').forEach(o => {
+    const trimmed = o.trim();
+    if (trimmed && !allowedOrigins.includes(trimmed)) allowedOrigins.push(trimmed);
+  });
+}
+
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
+      callback(null, true);
+    } else {
+      callback(null, true);
+    }
+  },
+  credentials: true,
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
@@ -37,6 +57,7 @@ app.use('/api/orders', require('./routes/orders'));
 app.use('/api/customers', require('./routes/customers'));
 app.use('/api/org-chart', require('./routes/orgChart'));
 app.use('/api/gold-prices', require('./routes/goldPrices'));
+app.use('/api/ai', require('./routes/ai'));
 
 // In-depth Analytics Endpoint (Available only for Admin and Staff Admin)
 app.get('/api/analytics', verifyToken, requireStaffOrAdmin, (req, res) => {
