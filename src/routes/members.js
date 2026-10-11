@@ -98,7 +98,7 @@ router.put('/:id/status', verifyToken, requireAdmin, async (req, res) => {
     message: `Đã cập nhật trạng thái tài khoản thành công sang: ${status === 'sold' ? 'Đã bán' :
       status === 'trial' ? 'Dùng thử' :
         status === 'cancelled' ? 'Hủy bỏ' : 'Chờ duyệt'
-      }.${smsNotice}`,
+      }.`,
     member: memberProfile,
     smsSent: Boolean(smsNotice)
   });
@@ -228,11 +228,26 @@ router.put('/:id/approve', verifyToken, requireAdmin, async (req, res) => {
       password: rawPass
     });
     smsNotice = ` 📱 Đã gửi tin nhắn SMS tới ${updatedUser.phone}: "${smsRes.message}"`;
+
+    // Gửi thông báo Zalo ZNS Phê Duyệt Kích Hoạt Bản Quyền Thành Công
+    try {
+      await sendZaloApprovalZNS({
+        phone: updatedUser.phone,
+        name: updatedUser.name,
+        storeName: updatedUser.storeName,
+        softwarePackage: updatedUser.softwarePackage,
+        licenseKey: updatedUser.licenseKey || `T3G-PRO-${Math.floor(1000 + Math.random() * 9000)}`,
+        loginId: updatedUser.phone,
+        password: rawPass
+      });
+    } catch (zaloApprovalErr) {
+      console.error('Error sending Zalo approval notification:', zaloApprovalErr);
+    }
   }
 
   const { password, ...memberProfile } = updatedUser;
   res.json({
-    message: isApproved ? `Phê duyệt thành viên thành công!${smsNotice}` : 'Đã thu hồi quyền truy cập chuyên sâu.',
+    message: isApproved ? 'Phê duyệt thành viên thành công!' : 'Đã thu hồi quyền truy cập chuyên sâu.',
     member: memberProfile,
     smsSent: Boolean(smsNotice)
   });

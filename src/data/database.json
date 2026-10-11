@@ -1,4 +1,12 @@
 {
+  "zaloTokens": [
+    {
+      "accessToken": "tlCzCznZK5lRzpmqsMzMMTZuFJ3VTZudg-G3Ezy5Bowhxp80_G06BuRpQ13hE5GTgUrxADCqLaUpq5Heto9d0fB7S37u4N55WFOPNUKFCKRzdmzfhc0_0kkl1Z61PZGbqubNB9PcV1x7fn5_a54YSk2c3a2DKGrsqvipMCjg4c2X_WnUsIW0Fw707Z33K6WhXef69FnDC12Xr18i_pez1fZPC2NiB0y_zE4T49aDDZxBvHSXiJ8k5hR762Qk4pKRsTGw9QK041VfoXaUa05s4jAKUWoTUrCqpg5h2ynUSsUMotXop2PHGitjM3QEUajPrxj2Dj1YU0c7isOOW45U4jk5CcRQR2T6sBiMI8nLFdA0m0fkqZK4LAN_64RTSYHFe8jARw5AKcMYkLDEuKanJg6AErhuH3fJJrSre5jPttrKMm",
+      "refreshToken": "EU997B9-qsiyvaWRjtBLQJ_fIH-nQyW-U90WCFrMqpm7ameNqWRZ9IoI6qx5KOLv0yLiLFTGbse0i7v8ZMMAG5QYVpBVJPmPAOrwAlfjb5mpesXU_dgJDJllTn7V2VOs4F0z0yqQsGaQrp1to1h8GGxZ7M_KECX-0jSkTVSosmGE-2TswcN4LWc8BYd-VBSaC-9XCFedfXb-qqixcqsmEaEjBX_BChKi4DCfBkGEirq8uN9kX2-gPbdRI56yH8DRRvbaAvjP_HT8mG4xaZ_vC43S9oUDEDCe1Cn67_K9YH5axXOScoZpOa2pPcA5ReHtSPjfPujvfWnZdK0UdcAhANMfFngxPlSFI9qOABDPtZPUmW93hIliToF_TM6o9v1jFly5UzO-taGowpDm-1UcLt3yCdNqOSmBEJ6yhAn6iM3NQm",
+      "expiresAt": 1789702749680,
+      "updatedAt": "2026-09-17T03:39:09.681Z"
+    }
+  ],
   "users": [
     {
       "id": "usr_admin",
@@ -58,24 +66,25 @@
       "updatedAt": "2026-09-13T01:59:29.516Z"
     },
     {
-      "id": "use_1789457206311_h1wfn",
-      "createdAt": "2026-09-15T07:26:46.310Z",
+      "id": "use_1789551439804_g1r6v",
+      "createdAt": "2026-09-16T09:37:19.803Z",
       "name": "Mai Nguyễn Trường Duy",
       "phone": "0335238260",
       "email": "",
-      "password": "$2a$10$zq5/6hiVw.ZiYznm0/cII.RLgDqJeSELQ.P5Zek3n8K2HzLK1nkm.",
+      "password": "$2a$10$cvbYQh2C/D08kJHji23Jy..rGXDCn5ZKXQnjDQKMv8Yz1Z1Io7B8.",
       "rawPassword": "123456",
-      "storeName": "Tiệm Vàng",
+      "storeName": "Tiệm Vàng Demo",
       "address": "Phường phú thọ",
       "role": "member",
-      "isApproved": false,
-      "status": "pending",
-      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "isApproved": true,
+      "status": "sold",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
       "amountPaid": 0,
-      "licenseKey": "T3G-GÓI QUẢN LÝ CƠ BẢN-H2XB-FFEV",
-      "expirationDate": "2026-10-15T07:26:46.310Z",
-      "referralCode": "TIEMVANG281",
-      "referrerCode": ""
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "expirationDate": "2026-10-16T09:37:19.802Z",
+      "referralCode": "TIEMVANG333",
+      "referrerCode": "",
+      "updatedAt": "2026-09-18T01:51:44.531Z"
     }
   ],
   "orders": [
@@ -578,6 +587,105 @@
       "content": "[T3Gold] Mã OTP khôi phục mật khẩu của anh/chị (Tiệm Vàng) là: 690093. Mã có hiệu lực trong 5 phút. Vui lòng không chia sẻ mã này cho người khác.",
       "status": "sent",
       "sentAt": "2026-09-13T08:49:02.942Z"
+    },
+    {
+      "id": "sms_1789551359436_cfahn",
+      "createdAt": "2026-09-16T09:35:59.436Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nGói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn) của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-16T09:35:59.412Z"
+    },
+    {
+      "id": "sms_1789551454160_bf7fx",
+      "createdAt": "2026-09-16T09:37:34.160Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-16T09:37:34.148Z"
+    },
+    {
+      "id": "sms_1789554502581_14ypt",
+      "createdAt": "2026-09-16T10:28:22.582Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-16T10:28:22.565Z"
+    },
+    {
+      "id": "sms_1789555508080_gd7kd",
+      "createdAt": "2026-09-16T10:45:08.080Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-16T10:45:08.062Z"
+    },
+    {
+      "id": "sms_1789616349479_hbndv",
+      "createdAt": "2026-09-17T03:39:09.481Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-17T03:39:09.457Z"
+    },
+    {
+      "id": "sms_1789694841685_3ed40",
+      "createdAt": "2026-09-18T01:27:21.685Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-18T01:27:21.665Z"
+    },
+    {
+      "id": "sms_1789694851862_slikf",
+      "createdAt": "2026-09-18T01:27:31.862Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-18T01:27:31.845Z"
+    },
+    {
+      "id": "sms_1789696121168_wbzi4",
+      "createdAt": "2026-09-18T01:48:41.168Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-18T01:48:41.136Z"
+    },
+    {
+      "id": "sms_1789696130231_pk8ur",
+      "createdAt": "2026-09-18T01:48:50.231Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-18T01:48:50.204Z"
+    },
+    {
+      "id": "sms_1789696145184_1qsvi",
+      "createdAt": "2026-09-18T01:49:05.184Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-18T01:49:05.167Z"
+    },
+    {
+      "id": "sms_1789696304554_hw73b",
+      "createdAt": "2026-09-18T01:51:44.554Z",
+      "phone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "content": "🎉 CHÚC MỪNG! GÓI PHẦN MỀM T3GOLD ĐÃ ĐƯỢC PHÊ DUYỆT\n\nPhần Mềm Cầm Đồ - 5.000.000đ của anh/chị đã được T3Gold phê duyệt và kích hoạt thành công.\n\n🔐 Thông tin đăng nhập\n\nTên đăng nhập: 0335238260\nMật khẩu: 123456\n\n✨ Anh/chị có thể đăng nhập và bắt đầu trải nghiệm các tính năng quản lý trên T3Gold ngay hôm nay.\n\nT3Gold – Thao tác đơn giản, báo cáo thông minh.",
+      "status": "sent",
+      "sentAt": "2026-09-18T01:51:44.537Z"
     }
   ],
   "zaloLogs": [
@@ -745,6 +853,317 @@
       "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
       "status": "recorded",
       "sentAt": "2026-09-15T07:26:46.335Z"
+    },
+    {
+      "id": "zal_1789551359550_081ih",
+      "createdAt": "2026-09-16T09:35:59.550Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng",
+      "softwarePackage": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+      "licenseKey": "T3G-GÓI QUẢN LÝ CƠ BẢN-H2XB-FFEV",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng",
+        "product_name": "Gói Quản Lý Cơ Bản - 2.900.000đ (Bản quyền vĩnh viễn)",
+        "license_key": "T3G-GÓI QUẢN LÝ CƠ BẢN-H2XB-FFEV",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-16T09:35:59.549Z"
+    },
+    {
+      "id": "zal_1789551439885_ec2x5",
+      "createdAt": "2026-09-16T09:37:19.885Z",
+      "type": "customer_registration_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "templateId": "636472",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "company_name": "T3Gold",
+        "order_code": "T3G-9568",
+        "payment_status": "Chờ quản trị viên duyệt"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-16T09:37:19.884Z"
+    },
+    {
+      "id": "zal_1789551439933_q8wa9",
+      "createdAt": "2026-09-16T09:37:19.933Z",
+      "type": "admin_registration_alert",
+      "adminPhone": "84988768345",
+      "customerName": "Mai Nguyễn Trường Duy",
+      "customerPhone": "0335238260",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "templateId": "636722",
+      "templateData": {
+        "order_code": "T3G-ADMIN-7560",
+        "payment_status": "Chờ Admin duyệt",
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "phone_number": "0335238260",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ (Tiệm Vàng Demo)"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-16T09:37:19.932Z"
+    },
+    {
+      "id": "zal_1789551454205_xj1vz",
+      "createdAt": "2026-09-16T09:37:34.205Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-16T09:37:34.204Z"
+    },
+    {
+      "id": "zal_1789554502704_ytojk",
+      "createdAt": "2026-09-16T10:28:22.704Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-16T10:28:22.703Z"
+    },
+    {
+      "id": "zal_1789555508264_mrqnn",
+      "createdAt": "2026-09-16T10:45:08.264Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-16T10:45:08.262Z"
+    },
+    {
+      "id": "zal_1789616349771_lj8tt",
+      "createdAt": "2026-09-17T03:39:09.771Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-17T03:39:09.769Z"
+    },
+    {
+      "id": "zal_1789694841790_3vth2",
+      "createdAt": "2026-09-18T01:27:21.790Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-18T01:27:21.789Z"
+    },
+    {
+      "id": "zal_1789694851943_nvkec",
+      "createdAt": "2026-09-18T01:27:31.943Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-18T01:27:31.942Z"
+    },
+    {
+      "id": "zal_1789696121339_g30sf",
+      "createdAt": "2026-09-18T01:48:41.339Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-18T01:48:41.339Z"
+    },
+    {
+      "id": "zal_1789696130337_7z6wz",
+      "createdAt": "2026-09-18T01:48:50.337Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-18T01:48:50.336Z"
+    },
+    {
+      "id": "zal_1789696145275_02cph",
+      "createdAt": "2026-09-18T01:49:05.275Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-18T01:49:05.274Z"
+    },
+    {
+      "id": "zal_1789696304767_unmkb",
+      "createdAt": "2026-09-18T01:51:44.768Z",
+      "type": "customer_approval_zns",
+      "phone": "84335238260",
+      "name": "Mai Nguyễn Trường Duy",
+      "storeName": "Tiệm Vàng Demo",
+      "softwarePackage": "Phần Mềm Cầm Đồ - 5.000.000đ",
+      "licenseKey": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+      "templateId": "636724",
+      "templateData": {
+        "customer_name": "Mai Nguyễn Trường Duy",
+        "store_name": "Tiệm Vàng Demo",
+        "product_name": "Phần Mềm Cầm Đồ - 5.000.000đ",
+        "license_key": "T3G-PHẦN MỀM CẦM ĐỒ-FGE0-SGWY",
+        "payment_status": "Đã kích hoạt thành công"
+      },
+      "apiResponse": {
+        "error": -120,
+        "message": "OA does not have permission to use this feature"
+      },
+      "status": "sent",
+      "sentAt": "2026-09-18T01:51:44.765Z"
     }
   ]
 }
